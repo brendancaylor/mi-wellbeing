@@ -1,0 +1,165 @@
+<div id="page-wrapper">
+
+  <div class="wrapper">
+    <div class="inner">
+      <app-header></app-header>
+
+      <section id="banner">
+        <div class="items">
+          <section class="accent2">
+            <h1>Sed lorem</h1>
+            <p>Sed egestas, ante vulputate volutpat vitae luctus metus libero aliquam</p>
+            <ul class="actions special">
+              <li>
+                <a href="#" class="button primary">More</a>
+              </li>
+            </ul>
+          </section>
+          <section class="accent3">
+            <h1>Amet magna</h1>
+            <p>Fusce lancinia ipsum feugiat dolor sed matis tempus sed nullam</p>
+            <ul class="actions special">
+              <li>
+                <a href="#" class="button primary">More</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slider">
+          <article class="visible top">
+            <img src="assets/images/pic01.jpg" alt="" data-position="bottom right">
+          </article>
+          <article class="">
+            <img src="assets/images/pic02.jpg" alt="" data-position="bottom right">
+          </article>
+          <article class="">
+            <img src="assets/images/pic03.jpg" alt="" data-position="top left">
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="inner">
+
+        
+
+
+      <section class="main">
+        
+        <header class="major">
+          <h2>Lorem ipsum dolor</h2>
+          <p>Sed egestas adipiscing</p>
+        </header>
+        <div class="features">
+          <section>
+            <span class="icon fa-camera major accent2"></span>
+            <h3>Ultrices aliquam</h3>
+            <p>Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+          </section>
+          <section>
+            <span class="icon fa-paper-plane major accent3"></span>
+            <h3>Lorem sed nullam</h3>
+            <p>Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+          </section>
+          <section>
+            <span class="icon fa-envelope major accent4"></span>
+            <h3>Aliquam feugiat</h3>
+            <p>Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+          </section>
+        </div>
+      </section>
+      <section class="carousel accent4">
+
+        <article *ngIf="carouselIndex == 0" [ngClass]="carouselFadeIndex == 0 ? 'visible' : ''">
+          <div class="image">
+            <img src="assets/images/pic04.jpg" alt="" data-position="center">
+          </div>
+          <div class="content">
+            <h3>Magna tempus</h3>
+            <p>
+              {{carouselIndex}}
+              Adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor
+              erat risus justo adipiscing adipiscing amet placerat.</p>
+          </div>
+        </article>
+        <article *ngIf="carouselIndex == 1" [ngClass]="carouselFadeIndex == 1 ? 'visible' : ''">
+          <div class="image">
+            <img src="assets/images/pic05.jpg" alt="" data-position="center">
+          </div>
+          <div class="content">
+            <h3>Consequat ipsum</h3>
+            <p>Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa
+              ac ac. Semper adipiscing varius accumsan.</p>
+          </div>
+        </article>
+        <article *ngIf="carouselIndex == 2" [ngClass]="carouselFadeIndex == 2 ? 'visible' : ''">
+          <div class="image">
+            <img src="assets/images/pic06.jpg" alt="" data-position="center">
+          </div>
+          <div class="content">
+            <h3>Magna tempus</h3>
+            <p>Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan
+              lorem ipsum dolor sit amet nullam aliquam.</p>
+          </div>
+        </article>
+
+        <nav>
+          <a class="previous" (click)="previous()">
+            <span class="label">Previous</span>
+          </a>
+          <a class="next" (click)="next()">
+            <span class="label">Next</span>
+          </a>
+        </nav>
+      </section>
+      <section class="main">
+        <header class="major">
+          <h2>Sed tempus aliquam</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+        </header>
+      
+        <div class="spotlights">
+          <article>
+            <div class="image">
+              <img src="assets/images/pic07.jpg" alt="" data-position="center">
+            </div>
+            <div class="content">
+              <h3>Aliquam zzz</h3>
+              <p>Morbi in sem quis dui placerat ellentesque odio nisi euismod in haretra a, ultricies in, diam ed rcuc consequat
+                lorem ipsum dolor.</p>
+              <ul class="actions special">
+                <li>
+                  <a href="#" class="button primary">More</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="image">
+              <img src="assets/images/pic08.jpg" alt="" data-position="center">
+            </div>
+            <div class="content">
+              <h3>Pellentesque fermentum</h3>
+              <p>Eed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus
+                libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum lorem ipsum blandid
+                sti amet velvelit.</p>
+              <ul class="actions special">
+                <li>
+                  <a href="#" class="button primary">More</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="inner" app-footer>
+    </div>
+  </div>
+</div>

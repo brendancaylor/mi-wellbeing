@@ -1,0 +1,28 @@
+<nav id="menu" [ngClass]="showRightMenu ? 'show-right-menu': ''">
+    <ul class="links">
+        <li>
+            <a [routerLink]="['/home']" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Home</a>
+        </li>
+        <li>
+            <a [routerLink]="['/generic']" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Generic</a>
+        </li>
+        <li>
+            <a href="elements.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Elements</a>
+        </li>
+    </ul>
+    <a  (click)="toggleShowRightMenu()" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
+</nav>
+
+
+<header id="header">
+    <a [routerLink]="['/home']" class="logo">mi-wellbeing
+        <span>counselling in Exeter</span>
+    </a>
+    <nav>
+        <ul>
+            <li>
+                <a id="showmenu" (click)="toggleShowRightMenu()" style="cursor: pointer;">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
